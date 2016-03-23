@@ -8,7 +8,7 @@
 | :---: |
 | Android and iPhone running the same {N} + Angular2 plugin. |
 
-The seed is setup to allow you to create a `nativescript-angular` plugin quickly.
+The seed is setup to allow you to create a [nativescript-angular](https://github.com/NativeScript/nativescript-angular) plugin quickly.
 
 * Sample demo app ready for you to try out your plugin as you develop it.
 * Sample `Component`, `Directive`, `Pipe` and `Service` created for you (*tests coming soon*) to get started right away.
