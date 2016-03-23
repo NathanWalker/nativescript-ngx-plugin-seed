@@ -4,15 +4,17 @@
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 [![Dependency Status](https://david-dm.org/NathanWalker/nativescript-ng2-plugin-seed/status.svg)](https://david-dm.org/NathanWalker/nativescript-ng2-plugin-seed#info=dependencies) [![devDependency Status](https://david-dm.org/NathanWalker/nativescript-ng2-plugin-seed/dev-status.svg)](https://david-dm.org/NathanWalker/nativescript-ng2-plugin-seed#info=devDependencies)
 
-The seed is setup to allow you to create a `nativescript-angular` plugin quickly.
-There's a sample app ready for you to demo your plugin.
-There's also 1 of each (`Component`, `Directive`, `Pipe`, `Service`) created for you (*tests coming soon*) to get started right away. Customize whichever is helpful to your plugin and remove the others.
-
 | ![Demo](/resources/demo.png) |
 | :---: |
 | Android and iPhone running the same {N} + Angular2 plugin. |
 
-## Getting started
+The seed is setup to allow you to create a `nativescript-angular` plugin quickly.
+
+* Sample demo app ready for you to try out your plugin as you develop it.
+* Sample `Component`, `Directive`, `Pipe` and `Service` created for you (*tests coming soon*) to get started right away.
+* Customize whichever is helpful to your plugin and remove the others.
+
+## Get started
 
 1. Download a zip of this seed.
 2. `npm install -g typescript`
