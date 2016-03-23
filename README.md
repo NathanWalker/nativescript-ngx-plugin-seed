@@ -21,12 +21,9 @@ There's also 1 of each (`Component`, `Directive`, `Pipe`, `Service`) created for
 5. `npm install`
 6. Get to work.
 
-* [Developing](#developing)
-* [Why the `TNS` prefixed name?](#why-the-tns-prefixed-name)
+## Develop Workflow
 
-## Developing
-
-### Run Demo App to Try Plugin
+Make changes to plugin files, then:
 
 ```
 npm run demo.ios
@@ -38,11 +35,15 @@ npm run demo.android
 
 ### Build Plugin
 
+You'll want to run this before publishing.
+
 ```
 npm run build
 ```
 
 ### Testing
+
+Work in progress. Coming soon.
 
 ```
 npm test
