@@ -1,0 +1,14 @@
+﻿Label {
+  font-size:20;
+  padding:10;
+  horizontal-align: center;
+}
+
+SegmentedBar {
+  color: #106CC8;
+  margin: 10;
+}
+
+.important {
+  color: red;
+}
