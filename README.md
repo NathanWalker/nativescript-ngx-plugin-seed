@@ -17,9 +17,9 @@ The seed is setup to allow you to create a [nativescript-angular](https://github
 ## Get started
 
 1. Download a zip of this seed.
-2. `npm install -g typescript`
-3. `cd ... path/to/unzip/folder ...`
-4. `npm install nativescript -g`
+2. `cd ... path/to/unzip/folder ...`
+3. `npm install -g typescript`
+4. `npm install -g nativescript`
 5. `npm install`
 6. Get to work.
 
