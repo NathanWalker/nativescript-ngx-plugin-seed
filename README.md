@@ -23,6 +23,16 @@ The seed is setup to allow you to create a [nativescript-angular](https://github
 5. `npm install`
 6. Get to work.
 
+## Changes needed
+
+You will want to change a couple things for your plugin.
+
+1. Replace all instances of `nativescript-ng2-yourplugin` with name of *your* plugin:
+  * Here: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/package.json
+  * Here: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/src/package.json#L16
+  * Here: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/tsconfig.json#L14 (And likely modify more to tailor to your specific plugins typescript definition needs)
+2. Modify the demo to import your plugin files, etc: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/src/app/app.ts#L10-L15
+
 ## Develop Workflow
 
 Make changes to plugin files, then:

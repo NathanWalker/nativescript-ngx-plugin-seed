@@ -33,7 +33,7 @@
     "ci": "npm run test",
     "docs": "typedoc --options typedoc.json src/app/app.ts",
     "postinstall": "typings install",
-    "preparedemo": "npm run build; cd src; tns install"
+    "preparedemo": "npm run build; cd src; tns plugin remove nativescript-ng2-yourplugin; tns plugin add ..; tns install"
   },
   "dependencies": {
     "angular2": "2.0.0-beta.9",
@@ -43,7 +43,7 @@
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
     "systemjs": "~0.19.18",
-    "tns-core-modules": "^1.7.0",
+    "tns-core-modules": "^2.0.0-angular-1",
     "zone.js": "0.5.15"
   },
   "devDependencies": {
