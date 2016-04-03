@@ -53,6 +53,8 @@ You'll want to run this before publishing.
 npm run build
 ```
 
+**VERY IMPORTANT**: You need to modify `package.json` for your plugin. Most likely, you will want to remove 3 sections completely: `scripts`, `dependencies`, and `devDependencies` as those are setup for the demo. When publishing, it's important to ensure no unnecessary scripts or dependencies are installed when comsumers use your plugin. You can add those sections back *after* publishing. 
+
 ### Testing
 
 Work in progress. Coming soon.
