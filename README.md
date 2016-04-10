@@ -53,7 +53,7 @@ You'll want to run this before publishing.
 npm run build
 ```
 
-**VERY IMPORTANT**: You need to modify `package.json` for your plugin. Most likely, you will want to remove 3 sections completely: `scripts`, `dependencies`, and `devDependencies` as those are setup for the demo. When publishing, it's important to ensure no unnecessary scripts or dependencies are installed when comsumers use your plugin. You can add those sections back *after* publishing. 
+**VERY IMPORTANT**: You need to modify `package.json` for your plugin. Most likely, you will want to remove 3 sections completely: `scripts`, `dependencies`, and `devDependencies` as those are setup for the demo. When publishing, it's important to ensure no unnecessary scripts or dependencies are installed when comsumers use your plugin. You can add those sections back *after* publishing.
 
 ### Testing
 
@@ -62,6 +62,15 @@ Work in progress. Coming soon.
 ```
 npm test
 ```
+### Troubleshooting
+
+When preparing your demo if you get the following error message:
+
+```
+Plugin "nativescript-ng2-yourplugin" is not installed.
+Sending exception report (press Ctrl+C to stop).....
+```
+This means your plugin has not been copied over to the demo project, or failed when running the demo command previously. To resolve this run ``npm run repair``.
 
 ## Why the TNS prefixed name?
 
