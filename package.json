@@ -26,14 +26,15 @@
   "homepage": "https://github.com/YourName/nativescript-ng2-yourplugin#readme",
   "scripts": {
     "build": "tsc",
-    "demo.ios": "npm run preparedemo; cd src; tns emulate ios",
-    "demo.android": "npm run preparedemo; cd src; tns emulate android",
-    "test": "tsc; karma start",
+    "demo.ios": "npm run preparedemo && cd src && tns emulate ios",
+    "demo.android": "npm run preparedemo && cd src && tns emulate android",
+    "test": "tsc && karma start",
     "test-watch": "karma start --no-single-run --auto-watch",
     "ci": "npm run test",
     "docs": "typedoc --options typedoc.json src/app/app.ts",
+	"repair": "cd src && tns plugin add .. && tns install",
     "postinstall": "typings install",
-    "preparedemo": "typings install; npm run build; cd src; tns plugin remove nativescript-ng2-yourplugin; tns plugin add ..; tns install"
+    "preparedemo": "typings install && npm run build && cd src && tns plugin remove nativescript-ng2-yourplugin && tns plugin add .. && tns install"
   },
   "dependencies": {
     "angular2": "2.0.0-beta.9",
