@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES5",
+    "target": "es5",
     "module": "commonjs",
     "declaration": true,
     "emitDecoratorMetadata": true,
@@ -9,7 +9,6 @@
     "moduleResolution": "node"
   },
   "files": [
-    "typings/browser.d.ts",
     "src/node_modules/tns-core-modules/tns-core-modules.d.ts",
     "nativescript-ng2-yourplugin.ts"
   ],
