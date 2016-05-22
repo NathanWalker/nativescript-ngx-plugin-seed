@@ -1,4 +1,4 @@
-import {Directive, ElementRef, Renderer} from 'angular2/core';
+import {Directive, ElementRef, Renderer} from '@angular/core';
 
 @Directive({
   selector: '[plugin]'

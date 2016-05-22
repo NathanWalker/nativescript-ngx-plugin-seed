@@ -1,13 +1,16 @@
 import {
+  async,
   it,
   describe,
   expect,
-  injectAsync,
-  TestComponentBuilder,
+  inject,
   beforeEach,
   beforeEachProviders
-} from 'angular2/testing';
-import {Component} from 'angular2/core';
+} from '@angular/core/testing';
+import {
+  TestComponentBuilder
+} from '@angular/compiler/testing';
+import {Component} from '@angular/core';
 
 import {TNSYourPluginDirective} from './yourplugin.directive';
 
@@ -19,7 +22,7 @@ describe('TNSYourPluginDirective', () => {
     TestComponentBuilder
   ]);
 
-  beforeEach(injectAsync([TestComponentBuilder], tcb => {
+  beforeEach(inject([TestComponentBuilder], tcb => {
     return tcb
       .createAsync(TestComponent)
       .then(f => fixture = f);

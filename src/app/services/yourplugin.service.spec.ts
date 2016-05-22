@@ -1,14 +1,14 @@
 import {
+  async,
   it,
   describe,
   expect,
   inject,
-  injectAsync,
   beforeEach,
   beforeEachProviders
-} from 'angular2/testing';
+} from '@angular/core/testing';
 
-import {provide} from 'angular2/core';
+import {provide} from '@angular/core';
 import {TNSYourPluginService} from './yourplugin.service';
 
 import * as app from 'application';
@@ -44,7 +44,7 @@ describe('TNSYourPluginService', () => {
     ]
   });
 
-  it('should alert message', injectAsync([TNSYourPluginService], (plugin:TNSYourPluginService) => {
+  it('should alert message', inject([TNSYourPluginService], (plugin:TNSYourPluginService) => {
     return new Promise((resolve) => {
       setTimeout(() => {
         expect(dialogs.alert).toHaveBeenCalledWith('');

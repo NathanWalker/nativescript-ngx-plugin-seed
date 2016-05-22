@@ -1,14 +1,17 @@
 import {
+  async,
   it,
   describe,
   xdescribe,
   expect,
-  injectAsync,
-  TestComponentBuilder,
+  inject,
   beforeEach,
   beforeEachProviders
-} from 'angular2/testing';
-import {Component} from 'angular2/core';
+} from '@angular/core/testing';
+import {
+  TestComponentBuilder
+} from '@angular/compiler/testing';
+import {Component} from '@angular/core';
 
 import {TNSYourPluginComponent} from './yourplugin.component';
 
@@ -21,7 +24,7 @@ xdescribe('TNSYourPluginComponent', () => {
     TestComponentBuilder
   ]);
 
-  beforeEach(injectAsync([TestComponentBuilder], tcb => {
+  beforeEach(inject([TestComponentBuilder], tcb => {
     return tcb.overrideTemplate(TNSYourPluginComponent, (`
     <StackLayout>
       <SegmentedBar (selectedIndexChanged)="changeOption($event)"></SegmentedBar>

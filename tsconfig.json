@@ -9,7 +9,7 @@
     "moduleResolution": "node"
   },
   "files": [
-    "src/node_modules/tns-core-modules/tns-core-modules.d.ts",
+    "node_modules/tns-core-modules/tns-core-modules.d.ts",
     "nativescript-ng2-yourplugin.ts"
   ],
   "compileOnSave": false,
