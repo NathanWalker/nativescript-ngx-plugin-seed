@@ -12,7 +12,7 @@ import {
   TNSYourPluginDirective,
   TNSYourPluginPipe,
   TNSYourPluginService
-} from 'nativescript-ng2-yourplugin/nativescript-ng2-yourplugin';
+} from 'nativescript-ng2-yourplugin';
 
 @Component({
   selector: 'app',

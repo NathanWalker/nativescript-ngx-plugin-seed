@@ -5,8 +5,8 @@
     "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "sourceMap": true,
-    "moduleResolution": "node"
+    "noEmitHelpers": true,
+    "noEmitOnError": false
   },
   "files": [
     "node_modules/tns-core-modules/tns-core-modules.d.ts",
