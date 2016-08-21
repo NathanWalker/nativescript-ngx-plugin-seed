@@ -65,3 +65,7 @@ typings
 .editorconfig
 *.png
 resources
+preparepublish.js
+preparedevelope.js
+publishpackage.json
+developepackage.json
