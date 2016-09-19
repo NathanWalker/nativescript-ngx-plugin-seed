@@ -9,4 +9,4 @@ function copyFile(src, dest, forceOverWrite) {
 
 }
 
-copyFile( './developepackage.json', './package.json',true);
+copyFile( './developpackage.json', './package.json',true);

@@ -66,6 +66,6 @@ typings
 *.png
 resources
 preparepublish.js
-preparedevelope.js
+preparedevelop.js
 publishpackage.json
-developepackage.json
+developpackage.json

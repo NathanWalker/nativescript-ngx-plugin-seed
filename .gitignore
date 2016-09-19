@@ -66,4 +66,4 @@ src/hooks
 src/node_modules
 
 !preparepublish.js
-!preparedevelope.js
+!preparedevelop.js
