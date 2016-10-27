@@ -41,6 +41,7 @@ test
 Thumbs.db
 .DS_Store
 *.ts
+!*.d.ts
 *.yml
 src/*
 src/package.json
