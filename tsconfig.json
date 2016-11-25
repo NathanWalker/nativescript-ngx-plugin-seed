@@ -1,17 +1,35 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "declaration": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "noEmitHelpers": true,
-    "noEmitOnError": false
-  },
-  "files": [
-    "node_modules/tns-core-modules/tns-core-modules.d.ts",
-    "nativescript-ng2-yourplugin.ts"
-  ],
-  "compileOnSave": false,
-  "buildOnSave": false
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": true,
+        "removeComments": true,
+        "noLib": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "lib": [
+            "dom"
+        ],
+        "sourceMap": true,
+        "pretty": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "noImplicitAny": false,
+        "noImplicitReturns": true,
+        "noImplicitUseStrict": false,
+        "noFallthroughCasesInSwitch": true,
+        "typeRoots": [
+            "node_modules/@types",
+            "node_modules"
+        ],
+        "types": [
+            "jasmine"
+        ]
+    },
+    "exclude": [
+        "src",
+        "node_modules",
+        "platforms"
+    ],
+    "compileOnSave": false
 }

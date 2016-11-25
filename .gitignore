@@ -53,6 +53,7 @@ __build__/**
 # IDE #
 .idea/
 *.swp
+.vscode
 
 *.d.ts
 *.js

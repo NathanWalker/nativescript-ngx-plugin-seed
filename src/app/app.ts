@@ -1,10 +1,8 @@
-﻿import 'reflect-metadata';
-
-// nativescript
-import {nativeScriptBootstrap} from 'nativescript-angular/application';
+﻿// nativescript
+import { NativeScriptModule, platformNativeScriptDynamic } from 'nativescript-angular/platform';
 
 // angular 
-import {Component, provide} from '@angular/core';
+import {NgModule, Component} from '@angular/core';
 
 // app
 import {
@@ -25,13 +23,7 @@ import {
     <plugin></plugin>
     <Label text="Now get to work." class="important"></Label>
   </StackLayout>
-  `,
-  directives: [
-    TNSYourPluginComponent,
-    TNSYourPluginDirective
-  ],
-  pipes: [TNSYourPluginPipe],
-  providers: [TNSYourPluginService]
+  `
 })
 class DemoComponent {
   public message: string = "Your {N} + Angular 2 plugin is working."
@@ -39,4 +31,22 @@ class DemoComponent {
   constructor(private pluginService: TNSYourPluginService) {}
 }
 
-nativeScriptBootstrap(DemoComponent, []);
+@NgModule({
+  imports: [
+    NativeScriptModule
+  ],
+  declarations: [
+    DemoComponent,
+    TNSYourPluginComponent,
+    TNSYourPluginDirective,
+    TNSYourPluginPipe
+  ],
+  providers: [
+    TNSYourPluginService
+  ],
+  bootstrap: [DemoComponent]
+})
+class DemoModule { }
+
+platformNativeScriptDynamic().bootstrapModule(DemoModule);
+
