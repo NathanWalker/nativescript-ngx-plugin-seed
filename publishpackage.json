@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "description": "Your awesome NativeScript + Angular plugin.",
   "main": "nativescript-ng2-yourplugin.js",
-  "typings": "nativescript-ng2-yourplugin.d.ts",
+  "typings": "index.d.ts",
 	"nativescript": {
 		"platforms": {
-			"android": "2.3.0",
-      "ios": "2.3.0"
+			"android": "2.4.0",
+      "ios": "2.4.0"
 		}
 	},
   "repository": {
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/YourName/nativescript-ng2-yourplugin.git"
   },
   "keywords": [
-    "angular2",
+    "angular",
     "ng2",
     "nativescript"
   ],
