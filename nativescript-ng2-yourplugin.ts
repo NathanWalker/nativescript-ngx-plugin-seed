@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
 import { NativeScriptModule } from 'nativescript-angular/platform';
+import { NgModule } from '@angular/core';
 
 // for standard export at bottom
 import {TNSYourPluginComponent} from './src/app/components/yourplugin.component';

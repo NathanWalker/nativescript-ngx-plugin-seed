@@ -1,0 +1,34 @@
+{
+  "name": "nativescript-ng2-yourplugin",
+  "version": "0.0.0",
+  "description": "Your awesome NativeScript + Angular plugin.",
+  "main": "nativescript-ng2-yourplugin.js",
+  "typings": "nativescript-ng2-yourplugin.d.ts",
+	"nativescript": {
+		"platforms": {
+			"android": "2.3.0",
+      "ios": "2.3.0"
+		}
+	},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YourName/nativescript-ng2-yourplugin.git"
+  },
+  "keywords": [
+    "angular2",
+    "ng2",
+    "nativescript"
+  ],
+  "author": "Your Name <yourname@yourdomain.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YourName/nativescript-ng2-yourplugin/issues"
+  },
+  "homepage": "https://github.com/YourName/nativescript-ng2-yourplugin#readme",
+  "scripts": {
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

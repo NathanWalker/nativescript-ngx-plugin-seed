@@ -10,7 +10,7 @@ import {Component} from '@angular/core';
 })
 export class TNSYourPluginComponent {
   public options: Array<any> = [
-    { value: 'ng2 is great.', title: 'Angular 2' },
+    { value: 'ng is great.', title: 'Angular' },
     { value: '{N} makes it better.', title: 'NativeScript' }
   ];
 

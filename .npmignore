@@ -41,6 +41,7 @@ test
 Thumbs.db
 .DS_Store
 *.ts
+!*.d.ts
 *.yml
 src/*
 src/package.json
@@ -65,3 +66,7 @@ typings
 .editorconfig
 *.png
 resources
+preparepublish.js
+preparedevelop.js
+publishpackage.json
+developpackage.json
