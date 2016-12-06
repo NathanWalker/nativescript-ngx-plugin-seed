@@ -2,7 +2,7 @@
   "name": "nativescript-ng2-yourplugin",
   "version": "0.0.0",
   "description": "Your awesome NativeScript + Angular plugin.",
-  "main": "nativescript-ng2-yourplugin.js",
+  "main": "nativescript-ng2-yourplugin",
   "typings": "index.d.ts",
 	"nativescript": {
 		"platforms": {
