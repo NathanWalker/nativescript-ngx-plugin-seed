@@ -35,7 +35,7 @@
     "docs": "typedoc --options typedoc.json src/app/app.ts",
 	"repair": "cd src && tns plugin add .. && tns install",
     "preparedemo": "npm run build && cd src && tns plugin remove nativescript-ng2-yourplugin && tns plugin add .. && tns install",
-    "setup": "cd src && npm i"
+    "setup": "cd src && npm i && cd .. && npm i"
   },
   "dependencies": {
     "@angular/core": "~2.2.1",
