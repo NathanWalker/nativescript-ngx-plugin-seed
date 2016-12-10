@@ -33,18 +33,18 @@ You will want to change a couple things for your plugin.
   * Here: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/src/package.json#L22
   * Here: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/tsconfig.json#L13 (And likely modify more to tailor to your specific plugins typescript definition needs)
 2. Modify the demo to import your plugin files, etc: 
-  * Here:  https://github.com/kazemihabib/nativescript-ng2-plugin-seed/blob/master/src/app/main.ts#L12
-  * Here:  https://github.com/kazemihabib/nativescript-ng2-plugin-seed/blob/master/src/app/main.ts#L18
-  * Here:  https://github.com/kazemihabib/nativescript-ng2-plugin-seed/blob/master/src/app/app.component.ts#L3
-  * Here:  https://github.com/kazemihabib/nativescript-ng2-plugin-seed/blob/master/src/app/app.component.ts#L22
+  * Here:  https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/src/app/main.ts#L12
+  * Here:  https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/src/app/main.ts#L18
+  * Here:  https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/src/app/app.component.ts#L3
+  * Here:  https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/src/app/app.component.ts#L22
   
 3. Replace the 'YourPluginModule' with *your* plugin module name:
-  * Here: https://github.com/kazemihabib/nativescript-ng2-plugin-seed/blob/master/nativescript-ng2-yourplugin.ts#L30
-  * Here: https://github.com/kazemihabib/nativescript-ng2-plugin-seed/blob/master/src/app/main.ts#L12
-  * Here: https://github.com/kazemihabib/nativescript-ng2-plugin-seed/blob/master/src/app/main.ts#L18
+  * Here: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/nativescript-ng2-yourplugin.ts#L30
+  * Here: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/src/app/main.ts#L12
+  * Here: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/src/app/main.ts#L18
   
 4. If you modified the name of services,components,... or created new ones that you want to export them:
-  * Here: https://github.com/kazemihabib/nativescript-ng2-plugin-seed/blob/master/nativescript-ng2-yourplugin.ts#L3-L28
+  * Here: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/nativescript-ng2-yourplugin.ts#L3-L28
 
   
 
@@ -72,7 +72,7 @@ npm run build
 
   ***First Way*** : Most likely, you will want to remove 3 sections completely: `scripts`, `dependencies`, and `devDependencies` as those are setup for the demo. When publishing, it's important to ensure no unnecessary scripts or dependencies are installed when consumers use your plugin. You can add those sections back *after* publishing.
   
-  ***Second Way*** : You should modify two files: [developpackage.json](https://github.com/kazemihabib/nativescript-ng2-plugin-seed/blob/master/developpackage.json) and [publishpackage.json](https://github.com/kazemihabib/nativescript-ng2-plugin-seed/blob/master/publishpackage.json) and when you want to develope you can use script `node preparedevelop.js ` to copy `developpackage.json` to `package.json` and when you want to publish you can use  `node preparepublish.js ` to copy `publishpackage.json` to `package.json`
+  ***Second Way*** : You should modify two files: [developpackage.json](https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/developpackage.json) and [publishpackage.json](https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/publishpackage.json) and when you want to develope you can use script `node preparedevelop.js ` to copy `developpackage.json` to `package.json` and when you want to publish you can use  `node preparepublish.js ` to copy `publishpackage.json` to `package.json`
 
 ### Testing
 
