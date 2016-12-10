@@ -1,4 +1,4 @@
-import { NativeScriptModule } from 'nativescript-angular/platform';
+import { NativeScriptModule } from 'nativescript-angular';
 import { NgModule } from '@angular/core';
 
 // for standard export at bottom
