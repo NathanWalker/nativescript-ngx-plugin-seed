@@ -6,7 +6,7 @@
 
 | ![Demo](/resources/demo.png) |
 | :---: |
-| Android and iPhone running the same {N} + Angular2 plugin. |
+| Android and iPhone running the same {N} + Angular plugin. |
 
 The seed is setup to allow you to create a [nativescript-angular](https://github.com/NativeScript/nativescript-angular) plugin quickly.
 
