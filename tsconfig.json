@@ -1,35 +1,17 @@
 {
-    "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-        "declaration": true,
-        "removeComments": true,
-        "noLib": false,
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "lib": [
-            "dom"
-        ],
-        "sourceMap": true,
-        "pretty": true,
-        "allowUnreachableCode": false,
-        "allowUnusedLabels": false,
-        "noImplicitAny": false,
-        "noImplicitReturns": true,
-        "noImplicitUseStrict": false,
-        "noFallthroughCasesInSwitch": true,
-        "typeRoots": [
-            "node_modules/@types",
-            "node_modules"
-        ],
-        "types": [
-            "jasmine"
-        ]
-    },
-    "exclude": [
-        "src",
-        "node_modules",
-        "platforms"
-    ],
-    "compileOnSave": false
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "noEmitHelpers": true
+  },
+  "exclude": [
+      "src",
+      "node_modules",
+      "platforms"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false
 }

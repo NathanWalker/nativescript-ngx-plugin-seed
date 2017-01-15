@@ -4,7 +4,7 @@ import { NgModule } from "@angular/core";
 
 import { DemoComponent } from './app.component';
 
-import { TNSYourPluginModule } from "nativescript-ng2-yourplugin";
+import { TNSYourPluginModule } from "nativescript-ngx-yourplugin";
 
 
 @NgModule({

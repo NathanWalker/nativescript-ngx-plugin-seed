@@ -2,7 +2,7 @@
 
 [![Angular 2 Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://github.com/mgechev/angular2-style-guide)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
-[![Dependency Status](https://david-dm.org/NathanWalker/nativescript-ng2-plugin-seed/status.svg)](https://david-dm.org/NathanWalker/nativescript-ng2-plugin-seed#info=dependencies)
+[![Dependency Status](https://david-dm.org/NathanWalker/nativescript-ngx-plugin-seed/status.svg)](https://david-dm.org/NathanWalker/nativescript-ngx-plugin-seed#info=dependencies)
 
 | ![Demo](/resources/demo.png) |
 | :---: |
@@ -18,33 +18,31 @@ The seed is setup to allow you to create a [nativescript-angular](https://github
 
 1. Download a zip of this seed.
 2. `cd ... path/to/unzip/folder ...`
-3. `npm install -g typescript`
-4. `npm install -g nativescript`
-5. `npm install`
-6. `npm run setup`
-7. Get to work.
+3. `npm install -g nativescript`
+4. `npm run setup`
+5. Get to work.
 
 ## Changes needed
 
 You will want to change a couple things for your plugin.
 
-1. Replace all instances of `nativescript-ng2-yourplugin` with name of *your* plugin:
-  * Here: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/package.json
-  * Here: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/src/package.json#L22
-  * Here: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/tsconfig.json#L13 (And likely modify more to tailor to your specific plugins typescript definition needs)
+1. Replace all instances of `nativescript-ngx-yourplugin` with name of *your* plugin:
+  * Here: https://github.com/NathanWalker/nativescript-ngx-plugin-seed/blob/master/package.json
+  * Here: https://github.com/NathanWalker/nativescript-ngx-plugin-seed/blob/master/src/package.json#L22
+  * Here: https://github.com/NathanWalker/nativescript-ngx-plugin-seed/blob/master/tsconfig.json#L13 (And likely modify more to tailor to your specific plugins typescript definition needs)
 2. Modify the demo to import your plugin files, etc: 
-  * Here:  https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/src/app/main.ts#L12
-  * Here:  https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/src/app/main.ts#L18
-  * Here:  https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/src/app/app.component.ts#L3
-  * Here:  https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/src/app/app.component.ts#L22
+  * Here:  https://github.com/NathanWalker/nativescript-ngx-plugin-seed/blob/master/src/app/main.ts#L12
+  * Here:  https://github.com/NathanWalker/nativescript-ngx-plugin-seed/blob/master/src/app/main.ts#L18
+  * Here:  https://github.com/NathanWalker/nativescript-ngx-plugin-seed/blob/master/src/app/app.component.ts#L3
+  * Here:  https://github.com/NathanWalker/nativescript-ngx-plugin-seed/blob/master/src/app/app.component.ts#L22
   
 3. Replace the 'YourPluginModule' with *your* plugin module name:
-  * Here: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/nativescript-ng2-yourplugin.ts#L30
-  * Here: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/src/app/main.ts#L12
-  * Here: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/src/app/main.ts#L18
+  * Here: https://github.com/NathanWalker/nativescript-ngx-plugin-seed/blob/master/nativescript-ngx-yourplugin.ts#L30
+  * Here: https://github.com/NathanWalker/nativescript-ngx-plugin-seed/blob/master/src/app/main.ts#L12
+  * Here: https://github.com/NathanWalker/nativescript-ngx-plugin-seed/blob/master/src/app/main.ts#L18
   
 4. If you modified the name of services,components,... or created new ones that you want to export them:
-  * Here: https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/nativescript-ng2-yourplugin.ts#L3-L28
+  * Here: https://github.com/NathanWalker/nativescript-ngx-plugin-seed/blob/master/nativescript-ngx-yourplugin.ts#L3-L28
 
   
 
@@ -68,25 +66,31 @@ You'll want to run this before publishing.
 npm run build
 ```
 
-**VERY IMPORTANT**: You need to modify `package.json` for your plugin. 
+### Publishing
 
-  ***First Way*** : Most likely, you will want to remove 3 sections completely: `scripts`, `dependencies`, and `devDependencies` as those are setup for the demo. When publishing, it's important to ensure no unnecessary scripts or dependencies are installed when consumers use your plugin. You can add those sections back *after* publishing.
-  
-  ***Second Way*** : You should modify two files: [developpackage.json](https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/developpackage.json) and [publishpackage.json](https://github.com/NathanWalker/nativescript-ng2-plugin-seed/blob/master/publishpackage.json) and when you want to develope you can use script `node preparedevelop.js ` to copy `developpackage.json` to `package.json` and when you want to publish you can use  `node preparepublish.js ` to copy `publishpackage.json` to `package.json`
+`packagedev.json` should always mirror your `package.json` for development.
+After installing dependencies for your plugin and running your demo, just copy contents of `package.json` to `packagedev.json`.
 
-### Testing
+Then to publish:
 
-Work in progress. Coming soon.
+1. Setup `packagepublish.json` the way you want your plugin published (Bumping correct version and setting the description, author, keywords, repo, main, and typings correctly for instance).
+2. `node prep publish` (This will set your `package.json` to be your `packagepublish.json`).
+3. `npm run build` (Create a fresh build of your library)
+4. `npm publish`
 
-```
-npm test
-```
+### Back to development
+
+After publishing, it's a good idea to set your `package.json` back to development mode before committing your changes. Your `packagedev.json` should be exactly what your development mode package was before publishing above.
+
+1. `node prep dev`
+2. Continue developing.
+
 ### Troubleshooting
 
 When preparing your demo if you get the following error message:
 
 ```
-Plugin "nativescript-ng2-yourplugin" is not installed.
+Plugin "nativescript-ngx-yourplugin" is not installed.
 Sending exception report (press Ctrl+C to stop).....
 ```
 This means your plugin has not been copied over to the demo project, or failed when running the demo command previously. To resolve this run ``npm run repair``.

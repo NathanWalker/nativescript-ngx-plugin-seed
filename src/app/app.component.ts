@@ -1,6 +1,6 @@
 ﻿import {Component} from '@angular/core';
 
-import {TNSYourPluginService} from "nativescript-ng2-yourplugin";
+import {TNSYourPluginService} from "nativescript-ngx-yourplugin";
 
 @Component({
   selector: 'app',

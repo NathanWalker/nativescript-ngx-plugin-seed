@@ -11,7 +11,7 @@ module.exports = function (config) {
     // list of files / patterns to load in the browser
     files: [
       // Polyfills.
-      'node_modules/es6-shim/es6-shim.js',
+      // 'node_modules/es6-shim/es6-shim.js',
 
       'node_modules/reflect-metadata/Reflect.js',
 
@@ -42,7 +42,7 @@ module.exports = function (config) {
 
     // list of files to exclude
     exclude: [
-      'node_modules/angular2/**/*spec.js'
+      // 'node_modules/@angular/**/*spec.js'
     ],
 
     // preprocess matching files before serving them to the browser
